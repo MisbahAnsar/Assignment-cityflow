@@ -1,0 +1,419 @@
+/* App specific styles */
+
+/* ========== FLEXI PASS SECTION ========== */
+
+/* Gradient Dotted Line Separator (vertical style applied horizontally) */
+.gradient-dotted-line {
+  width: 196px;
+  height: 0;
+  border-width: 1px;
+  border-style: dashed;
+  border-image: linear-gradient(90deg, rgba(255, 248, 230, 0) 3.47%, #FFF8E6 52.61%, rgba(255, 248, 230, 0) 100.73%) 1;
+  opacity: 1;
+}
+
+/* Feature Card Wrapper - for positioning icon */
+.feature-card-wrapper {
+  position: relative;
+  padding-top: 22px;
+}
+
+/* Icon Badge - positioned to protrude from card */
+.icon-badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* Feature Card Styling */
+.feature-card {
+  background: linear-gradient(180deg, rgba(255, 184, 0, 0.172) -17.02%, rgba(0, 37, 63, 0) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 14px;
+  padding: 28px 14px 18px 14px;
+  width: 105px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.card-text {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.4;
+  font-family: sans-serif;
+  margin-top: 8px;
+}
+
+.card-text .highlight {
+  color: #D4A004;
+  font-weight: 600;
+}
+
+/* Diamond Indicator */
+.diamond-indicator {
+  width: 8px;
+  height: 8px;
+  background: #D4A004;
+  transform: rotate(45deg);
+}
+
+/* Gradient Dashed Lines for Diamond Section */
+.gradient-dash-line {
+  width: 70px;
+  height: 0;
+  border-width: 1px;
+  border-style: dashed;
+  opacity: 0.5;
+}
+
+.gradient-dash-line.left {
+  border-image: linear-gradient(90deg, rgba(255, 248, 230, 0) 0%, #FFF8E6 96.71%) 1;
+}
+
+.gradient-dash-line.right {
+  border-image: linear-gradient(90deg, #FFF8E6 0%, rgba(255, 248, 230, 0) 96.71%) 1;
+}
+
+/* ========== HOW IT WORKS SECTION ========== */
+
+.how-it-works-section {
+  background: #001726;
+}
+
+/* Step Separator Line (solid, not dotted) */
+.step-separator-line {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255, 248, 230, 0.3) 0%, rgba(255, 248, 230, 0.1) 100%);
+}
+
+/* Did you know styling */
+.did-you-know-content {
+  margin-top: 8px;
+}
+
+.refund-box {
+  background: linear-gradient(0deg, rgba(255, 184, 0, 0.172) -17.02%, rgba(0, 37, 63, 0) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 14px;
+  padding: 20px 24px;
+  max-width: 320px;
+}
+
+.refund-text {
+  font-family: 'Figtree', sans-serif;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.2%;
+}
+
+/* Full refund highlight styling */
+.full-refund-highlight {
+  color: #D4A004;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.002em;
+  text-decoration: underline;
+  text-decoration-color: #D4A004;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+/* ========== SELECT A PLAN SECTION ========== */
+
+.select-plan-section {
+  padding-top: 16px;
+}
+
+/* New Toggle Container */
+.toggle-container-new {
+  display: inline-flex;
+  background: #0a2a3d;
+  border-radius: 30px;
+  padding: 4px;
+  gap: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.toggle-btn-new {
+  padding: 12px 24px;
+  border-radius: 26px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.toggle-btn-new.active {
+  background: #1a3a4d;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.toggle-arrow-new {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* New Plan Header */
+.plan-header-new {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.plan-header-new.flexi {
+  background: linear-gradient(90deg, rgba(77, 182, 172, 0.2) 0%, rgba(77, 182, 172, 0.1) 50%, rgba(77, 182, 172, 0.2) 100%);
+  color: #4db6ac;
+  border-left: 3px solid #4db6ac;
+  border-right: 3px solid #4db6ac;
+}
+
+.plan-header-new.saver {
+  background: linear-gradient(90deg, rgba(212, 160, 4, 0.2) 0%, rgba(212, 160, 4, 0.1) 50%, rgba(212, 160, 4, 0.2) 100%);
+  color: #D4A004;
+  border-left: 3px solid #D4A004;
+  border-right: 3px solid #D4A004;
+}
+
+/* New Plan Card */
+.plan-card-new {
+  background: #FFF8E6;
+  padding: 16px 20px;
+  margin: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.plan-card-new.selected {
+  background: #FFF8E6;
+}
+
+.plan-card-new:last-of-type {
+  border-bottom: none;
+}
+
+/* Green Check Circle */
+.check-circle-green {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #4db6ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Radio Circle */
+.radio-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background: transparent;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Rides Count */
+.rides-count {
+  font-size: 22px;
+  font-weight: 700;
+  color: #001726;
+}
+
+/* Price */
+.price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #001726;
+}
+
+.price-unit {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+}
+
+/* Rides Detail */
+.rides-detail {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+}
+
+/* New Tags */
+.tag-new {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.tag-new.teal {
+  background: rgba(77, 182, 172, 0.15);
+  color: #3d9d94;
+  border: 1px solid rgba(77, 182, 172, 0.3);
+}
+
+.tag-new.red {
+  background: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+  border: 1px solid rgba(220, 53, 69, 0.2);
+}
+
+/* New Proceed Button */
+.proceed-btn-new {
+  width: 100%;
+  padding: 16px;
+  background: #4db6ac;
+  color: #001726;
+  border: 2px solid #D4A004;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: all 0.2s ease;
+}
+
+.proceed-btn-new:hover {
+  background: #3d9d94;
+}
+
+/* Legacy styles kept for compatibility */
+.toggle-container {
+  display: flex;
+  background: rgba(40, 45, 60, 0.8);
+  border-radius: 25px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.toggle-btn {
+  padding: 10px 20px;
+  border-radius: 22px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.toggle-btn.active {
+  background: #D4A004;
+  color: #001726;
+}
+
+.toggle-arrow {
+  font-size: 12px;
+}
+
+.plan-header {
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 0;
+}
+
+.plan-header.flexi {
+  background: linear-gradient(90deg, rgba(0, 128, 128, 0.15) 0%, rgba(0, 128, 128, 0.05) 100%);
+  color: #4db6ac;
+  border-left: 3px solid #4db6ac;
+}
+
+.plan-header.saver {
+  background: linear-gradient(90deg, rgba(212, 160, 4, 0.15) 0%, rgba(212, 160, 4, 0.05) 100%);
+  color: #D4A004;
+  border-left: 3px solid #D4A004;
+}
+
+.plan-card {
+  background: #f8f9fa;
+  padding: 16px;
+  border-radius: 12px;
+  margin-top: 0;
+}
+
+.plan-card.selected {
+  border: 2px solid #4db6ac;
+  background: #fff;
+}
+
+.radio-check {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.radio-check.checked {
+  background: #4db6ac;
+  border-color: #4db6ac;
+}
+
+.tag {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.tag.teal {
+  background: rgba(77, 182, 172, 0.15);
+  color: #4db6ac;
+}
+
+.tag.red {
+  background: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.proceed-btn {
+  width: 100%;
+  padding: 16px;
+  background: #4db6ac;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background 0.2s ease;
+}
+
+.proceed-btn:hover {
+  background: #3d9d94;
+}
