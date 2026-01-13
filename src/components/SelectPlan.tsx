@@ -120,40 +120,55 @@ const SelectPlan = () => {
                 <div className="gradient-dash-line right flex-shrink-0"></div>
             </div>
 
-            <p className="text-gray-400 text-sm text-center mb-6">
+            <p className="text-gray-400 text-sm text-center mb-10">
                 Rides are pre-booked on consecutive weekdays
             </p>
 
             {/* Main Card Container with Toggle positioned half-in/half-out */}
             <div className="px-4">
-                <div className="relative pt-8">
-                    {/* Toggle Switch - positioned more into the card */}
-                    <div className="absolute top-0 left-0 right-0 flex justify-center z-10" style={{ transform: 'translateY(-30%)' }}>
-                        <div className="inline-flex rounded-full p-1 gap-0 shadow-lg" style={{ background: '#0a2a3d' }}>
+                {/* White Card Container - relative for toggle positioning */}
+                <div className="relative mt-6">
+                    {/* Toggle Switch - positioned at top of white card, half inside half outside */}
+                    <div className="absolute top-0 left-0 right-0 flex justify-center z-10" style={{ transform: 'translateY(-50%)' }}>
+                        <div
+                            className="inline-flex rounded-full items-center"
+                            style={{
+                                background: '#00253F',
+                                border: '0.5px solid #FFD66B',
+                                padding: '4px 6px'
+                            }}
+                        >
                             <button
                                 onClick={() => setTripType('one-way')}
-                                className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-all whitespace-nowrap ${tripType === 'one-way'
-                                        ? 'bg-[#1a3d4d] text-white'
-                                        : 'text-gray-400 hover:text-gray-300'
-                                    }`}
+                                className="flex items-center gap-2 text-sm font-medium transition-all whitespace-nowrap text-white"
+                                style={{
+                                    padding: '10px 24px',
+                                    borderRadius: '24px',
+                                    background: 'transparent'
+                                }}
                             >
-                                <ArrowRight className="w-4 h-4 text-yellow-400" />
+                                <ArrowRight className="w-4 h-4 text-white" />
                                 One-way
                             </button>
                             <button
                                 onClick={() => setTripType('round-trip')}
-                                className={`flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-all whitespace-nowrap ${tripType === 'round-trip'
-                                        ? 'bg-[#FFF8E6] text-gray-900'
-                                        : 'text-gray-400 hover:text-gray-300'
-                                    }`}
+                                className="flex items-center gap-2 text-sm font-semibold transition-all whitespace-nowrap"
+                                style={{
+                                    background: '#FFD66B',
+                                    boxShadow: '0px 0px 1px 0px rgba(0, 37, 63, 0.32), 0px 2px 8px 0px rgba(0, 37, 63, 0.5)',
+                                    borderRadius: '24px',
+                                    padding: '10px 16px',
+                                    color: '#00253F',
+                                    marginLeft: '8px'
+                                }}
                             >
-                                <ArrowLeftRight className={`w-4 h-4 ${tripType === 'round-trip' ? 'text-gray-900' : 'text-yellow-400'}`} />
+                                <ArrowLeftRight className="w-4 h-4" style={{ color: '#00253F' }} />
                                 Round Trip
                             </button>
                         </div>
                     </div>
 
-                    {/* White Card Container */}
+                    {/* White Card */}
                     <div className="bg-white rounded-2xl overflow-hidden shadow-lg pt-10">
                         {/* Flexi Plan Section Header */}
                         <div

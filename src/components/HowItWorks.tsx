@@ -68,7 +68,7 @@ const HowItWorks = () => {
             <div className="mt-10 text-center">
                 <div className="flex items-center justify-center gap-2 mb-3">
                     <span className="text-gray-400 text-sm">Did you know</span>
-                    <img src="/arrow.png" alt="" className="w-5 h-5" />
+                    <img src="/arrow.png" alt="" className="w-5 h-5 pt-1" />
                 </div>
 
                 <div className="did-you-know-content">

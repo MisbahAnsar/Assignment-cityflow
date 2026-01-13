@@ -17,6 +17,14 @@ function App() {
         style={{ backgroundImage: 'url(/bg.png)' }}
       />
 
+      {/* Golden light ray from top right corner - Flexi Pass color */}
+      <div
+        className="absolute top-0 right-0 w-[300px] h-[300px] pointer-events-none"
+        style={{
+          background: 'radial-gradient(ellipse at 100% 0%, rgba(212, 160, 4, 0.15) 0%, rgba(212, 160, 4, 0.08) 30%, rgba(212, 160, 4, 0) 70%)',
+        }}
+      />
+
       {/* Dark gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#001726]/70 to-[#001726]" />
 
